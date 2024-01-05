@@ -6,12 +6,12 @@ public class EconomyClassFoodMenu implements FoodMenu {
 
     }
     @Override
-    public String getVegFoodMenu() {
+    public String vegFoodMenu() {
         return "Economy VegMenu";
     }
 
     @Override
-    public String getNonVegFoodMenu() {
+    public String nonVegFoodMenu() {
         return "Economy NonVegMenu";
     }
 }

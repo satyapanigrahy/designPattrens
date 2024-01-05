@@ -1,18 +1,18 @@
 package designpatterns.factory;
 
-public class PremiumClass implements TicketClass{
+public class PremiumClass implements ITicket {
     @Override
-    public Drinks getDrinksMenu() {
+    public Drinks drinksMenu() {
         return new PrimiumClassDrinksMenu();
     }
 
     @Override
-    public FoodMenu getFoodMenu() {
+    public FoodMenu foodMenu() {
         return new PremiumClassFoodMenu();
     }
 
     @Override
-    public SeatDetails getSeatDetails() {
+    public SeatDetails seatDetails() {
         return new PremiumClassSeatDetails();
     }
 }

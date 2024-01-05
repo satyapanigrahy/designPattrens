@@ -6,7 +6,7 @@ public class EconomyClassSeatDetails implements SeatDetails {
 
     }
     @Override
-    public String getSeatDetails() {
+    public String seatDetails() {
         return "Seat No. 34B, class: Economy";
     }
 }

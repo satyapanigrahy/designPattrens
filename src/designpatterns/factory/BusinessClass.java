@@ -1,18 +1,18 @@
 package designpatterns.factory;
 
-public class BusinessClass implements TicketClass{
+public class BusinessClass implements ITicket {
     @Override
-    public Drinks getDrinksMenu() {
+    public Drinks drinksMenu() {
         return new BusinessClassDrinksMenu();
     }
 
     @Override
-    public FoodMenu getFoodMenu() {
+    public FoodMenu foodMenu() {
         return new BusinessClassFoodMenu();
     }
 
     @Override
-    public SeatDetails getSeatDetails() {
+    public SeatDetails seatDetails() {
         return new BusinessClassSeatDetails();
     }
 }

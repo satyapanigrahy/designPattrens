@@ -1,22 +1,22 @@
 package designpatterns.factory;
 
-public class EconomyClass implements TicketClass {
+public class EconomyClass implements ITicket {
 
     public EconomyClass(){
 
     }
     @Override
-    public Drinks getDrinksMenu() {
+    public Drinks drinksMenu() {
         return new EconomyClassDrinksMenu();
     }
 
     @Override
-    public FoodMenu getFoodMenu() {
+    public FoodMenu foodMenu() {
         return new EconomyClassFoodMenu();
     }
 
     @Override
-    public SeatDetails getSeatDetails() {
+    public SeatDetails seatDetails() {
         return new EconomyClassSeatDetails();
     }
 }

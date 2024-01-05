@@ -2,12 +2,12 @@ package designpatterns.factory;
 
 public class PremiumClassFoodMenu implements FoodMenu {
     @Override
-    public String getVegFoodMenu() {
+    public String vegFoodMenu() {
         return "Premium VegMenu";
     }
 
     @Override
-    public String getNonVegFoodMenu() {
+    public String nonVegFoodMenu() {
         return "Premium NonVegMenu";
     }
 }
